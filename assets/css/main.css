@@ -3191,7 +3191,7 @@ ol {
 
 .achievement {
     padding: 120px 0;
-    background-image: url("../images/achievement/achievement-bg.jpg");
+    background-image: url("../images/hero/hero-bg-1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -5547,6 +5547,8 @@ only screen and (min-width: 1400px) {
 
 .footer .single-footer.f-about .logo img {
     width: 190px;
+   
+
 }
 
 .footer .single-footer.f-about p {
