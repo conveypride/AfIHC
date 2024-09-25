@@ -109,7 +109,7 @@ function updateHeroContent() {
 const { location, title, description, buttonText, buttonLink } = heroData[currentIndex];
 
 // Update background image
-heroArea.style.backgroundImage = `url('/assets/images/hero/hero-bg-${currentIndex + 1}.jpg')`;
+heroArea.style.backgroundImage = `url('assets/images/hero/hero-bg-${currentIndex + 1}.jpg')`;
 
 // Update hero content
 heroContent.innerHTML = `
