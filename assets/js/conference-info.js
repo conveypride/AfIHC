@@ -10,14 +10,14 @@ if (window.matchMedia("(min-width:576px)").matches) {
 
   var scrollPosition = 0;
 
-  $(".carousel-control-next").on("click", function () {
+  $(".nexti").on("click", function () {
     if (scrollPosition < carouselWidth - cardWidth * 3) {
       console.log("next");
       scrollPosition = scrollPosition + cardWidth;
       $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 800);
     }
   });
-  $(".carousel-control-prev").on("click", function () {
+  $(".previ").on("click", function () {
     if (scrollPosition > 0) {
       scrollPosition = scrollPosition - cardWidth;
       $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 800);
@@ -26,3 +26,16 @@ if (window.matchMedia("(min-width:576px)").matches) {
 } else {
   $(multipleItemCarousel).addClass("slide");
 }
+
+
+// hotel accomodation
+$(".custom-carousel").owlCarousel({
+  autoWidth: true,
+  loop: true
+});
+$(document).ready(function () {
+  $(".custom-carousel .item").click(function () {
+    $(".custom-carousel .item").not($(this)).removeClass("active");
+    $(this).toggleClass("active");
+  });
+});
