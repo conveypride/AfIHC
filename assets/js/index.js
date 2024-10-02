@@ -131,7 +131,9 @@ setInterval(updateHeroContent, 5000);
 // Initial content
 updateHeroContent();
 
-
+// onpage load
+document.addEventListener("DOMContentLoaded", function() {
+// speakers slider
 var multipleCardCarousel = document.querySelector("#carouselExampleControls");
 
 if (window.matchMedia("(min-width: 576px)").matches) {
@@ -198,7 +200,7 @@ if (window.matchMedia("(min-width: 576px)").matches) {
 } else {
   $(multipleCardCarousel).addClass("slide");
 }
-
+// end of speakers slider
 
 // early bird countdown:
 var end = new Date('10/25/2024 00:00 AM');
@@ -232,3 +234,5 @@ function showRemaining() {
 }
 
 timerr = setInterval(showRemaining, 1000);
+
+})

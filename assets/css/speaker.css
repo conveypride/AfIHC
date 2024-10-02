@@ -1,0 +1,165 @@
+.speakers-slider {
+    /* background-color: #5072a7; */
+    padding: 2em 2em 3em;
+  }
+  .speakers-title {
+    color: #fff;
+  }
+  .speakers-title h5 {
+    padding-left: 0.2em;
+  }
+  .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    height: 100%;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #fff;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    top: 60%;
+    transform: translateY(-50%);
+  }
+  
+/* For Webkit-based browsers (Chrome, Safari, Edge) */
+#speaker-description {
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #E63523 #f0f0f0; /* Scrollbar color for Firefox */
+  }
+  
+  /* Custom Scrollbar for WebKit browsers */
+  #speaker-description::-webkit-scrollbar {
+    width: 8px; /* Scrollbar width */
+  }
+  
+  #speaker-description::-webkit-scrollbar-thumb {
+    background-color: #E63523; /* Thumb color */
+    border-radius: 10px; /* Rounded edges for the scrollbar */
+  }
+  
+  #speaker-description::-webkit-scrollbar-track {
+    background-color: #f0f0f0; /* Background color for the scrollbar track */
+  }
+  
+  .image img {
+    width: 100%; /* Ensures the image takes the full width of its container */
+    height: 250px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensures the image covers the container without distorting */
+    border-radius: 8px; /* Optional: to give the image rounded corners */
+}
+
+
+  @media (min-width: 576px) {
+    .carousel-item {
+      margin-right: 0;
+      flex: 0 0 50%;
+      display: block;
+    }
+    .carousel-inner {
+      display: flex;
+    }
+    
+  }
+  @media (min-width: 768px) {
+    .carousel-inner {
+      padding: 1em;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      opacity: 1;
+      position: absolute;
+      left: 1em;
+      top: 90%;
+      transform: translateY(-50%);
+    }
+    .carousel-control-next {
+      left: 5em;
+    }
+    
+  }
+
+  /* .description-box { 
+  
+    margin-top: 1em;
+    max-height: 150px;  
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #000;
+} */
+
+/* .carousel-control-prev,
+.carousel-control-next {
+    background-color: #fff;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    top: 60%;
+    transform: translateY(-50%);
+} */
+ 
+/* early bird  */
+.countdown-timer {
+    height: 200px;
+    width: 250px;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0px 2px 15px #111;
+  }
+  
+  .top-bar {
+    height: 50px;
+    border-bottom: 2px solid #444;
+    background-color: #E63523;
+    border-radius: 10px 10px 0 0;
+     
+  }
+  
+  .top-bar-content:before {
+    /* content: "Days to go"; 
+    color: #FFF;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    line-height: 50px;
+    font-size: 30px;
+    text-shadow: 1px 1px 5px #444; */
+  }
+  
+  .bottom-section {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #earlybirdsdays {
+    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 150px;
+    font-size: 120px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  /* event schedule */
+ .scrollbar-designn {
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #E63523 #f0f0f0; /* Scrollbar color for Firefox */
+  }
+  
+  /* Custom Scrollbar for WebKit browsers */
+  .scrollbar-design::-webkit-scrollbar {
+    width: 5px; /* Scrollbar width */
+  }
+  
+  .scrollbar-design::-webkit-scrollbar-thumb {
+    background-color: #E63523; /* Thumb color */
+    border-radius: 12px; /* Rounded edges for the scrollbar */
+  }
+  
+  .scrollbar-design::-webkit-scrollbar-track {
+    background-color: #f0f0f0; /* Background color for the scrollbar track */
+  }
