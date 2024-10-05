@@ -2650,6 +2650,7 @@ ol {
 .single-speaker {
     position: relative;
     margin-top: 20px;
+    border-radius: 44px;
 }
 
 .single-speaker .top-content {
