@@ -281,79 +281,192 @@
 
 
 /* the team */
-
-.main{
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-x: auto;
+.speakers-slider {
+  /* background-color: #5072a7; */
+  padding: 2em 2em 3em;
 }
-.profile-card{
-  position: relative;
-  font-family: sans-serif;
-  width: 220px;
-  height: 220px;
-  background: #fff;
-  padding: 30px;
-  border-radius: 50%;
-  box-shadow: 0 0 22px #3336;
-  transition: .6s;
-  margin: 0 25px;
+.speakers-slider .speakers-title {
+  color: #fff;
 }
-.profile-card:hover{
-  border-radius: 10px;
-  height: 260px;
+.speakers-slider .speakers-title h5 {
+  padding-left: 0.2em;
 }
-.profile-card .img{
-  position: relative;
-  width: 100%;
+.speakers-slider .card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
   height: 100%;
-  transition: .6s;
-  z-index: 99;
 }
-.profile-card:hover .img{
-  transform: translateY(-60px);
-}
-.img img{
-  width: 100%;
+.speakers-slider .carousel-control-prev,
+.speakers-slider .carousel-control-next {
+  background-color: #fff;
+  /* color: #E63523; */
+  width: 3em;
+  height: 3em;
   border-radius: 50%;
-  box-shadow: 0 0 22px #3336;
-  transition: .6s;
+  top: 60%;
+  transform: translateY(-50%);
 }
-.profile-card:hover img{
-  border-radius: 10px;
+
+/* For Webkit-based browsers (Chrome, Safari, Edge) */
+.speakers-slider #speaker-description {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #E63523 #f0f0f0; /* Scrollbar color for Firefox */
 }
-.caption{
-  text-align: center;
-  transform: translateY(-80px);
-  opacity: 0;
-  transition: .6s;
+
+/* Custom Scrollbar for WebKit browsers */
+.speakers-slider #speaker-description::-webkit-scrollbar {
+  width: 8px; /* Scrollbar width */
 }
-.profile-card:hover .caption{
-  opacity: 1;
+
+.speakers-slider #speaker-description::-webkit-scrollbar-thumb {
+  background-color: #E63523; /* Thumb color */
+  border-radius: 10px; /* Rounded edges for the scrollbar */
 }
-.caption h3{
-  font-size: 21px;
-  font-family: sans-serif;
+
+.speakers-slider #speaker-description::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Background color for the scrollbar track */
 }
-.caption p{
-  font-size: 15px;
-  color: #0c52a1;
-  font-family: sans-serif;
-  margin: 2px 0 9px 0;
+
+.speakers-slider .image img {
+  width: 100%; /* Ensures the image takes the full width of its container */
+  height: 250px; /* Set a fixed height for the images */
+  object-fit: cover; /* Ensures the image covers the container without distorting */
+  border-radius: 8px; /* Optional: to give the image rounded corners */
 }
-.caption .social-links a{
-  color: #333;
-  margin-right: 15px;
-  font-size: 21px;
-  transition: .6s;
+
+
+@media (min-width: 576px) {
+  .speakers-slider  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 50%;
+    display: block;
+    
+  }
+  .speakers-slider  .carousel-inner {
+    display: flex;
+  }
+  
 }
-.social-links a:hover{
-  color: #0c52a1;
+@media (min-width: 768px) {
+  .speakers-slider  .carousel-inner {
+    padding: 1em;
+  }
+
+  .speakers-slider  .carousel-control-prev,
+  .speakers-slider  .carousel-control-next {
+    opacity: 1;
+    position: absolute;
+    color: #000000;
+    left: 1em;
+    top: 90%;
+    transform: translateY(-50%);
+  }
+  .speakers-slider  .carousel-control-next {
+    left: 5em;
+  }
+  
 }
+
+
+ 
 
 /* the team */
+
+
+
+
+/* the board */
+.speakers-sliderboard {
+  /* background-color: #5072a7; */
+  padding: 2em 2em 3em;
+}
+.speakers-sliderboard .speakers-titleboard {
+  color: #fff;
+}
+.speakers-sliderboard .speakers-titleboard h5 {
+  padding-left: 0.2em;
+}
+.speakers-sliderboard .card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  height: 100%;
+}
+.speakers-sliderboard .carousel-control-prev,
+.speakers-sliderboard .carousel-control-next {
+  background-color: #fff;
+  /* color: #E63523; */
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+/* For Webkit-based browsers (Chrome, Safari, Edge) */
+.speakers-sliderboard #speaker-descriptionboard {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #E63523 #f0f0f0; /* Scrollbar color for Firefox */
+}
+
+/* Custom Scrollbar for WebKit browsers */
+.speakers-sliderboard #speaker-descriptionboard::-webkit-scrollbar {
+  width: 8px; /* Scrollbar width */
+}
+
+.speakers-sliderboard #speaker-descriptionboard::-webkit-scrollbar-thumb {
+  background-color: #E63523; /* Thumb color */
+  border-radius: 10px; /* Rounded edges for the scrollbar */
+}
+
+.speakers-sliderboard #speaker-descriptionboard::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Background color for the scrollbar track */
+}
+
+.speakers-sliderboard .image img {
+  width: 100%; /* Ensures the image takes the full width of its container */
+  height: 250px; /* Set a fixed height for the images */
+  object-fit: cover; /* Ensures the image covers the container without distorting */
+  border-radius: 8px; /* Optional: to give the image rounded corners */
+}
+
+
+@media (min-width: 576px) {
+  .speakers-sliderboard  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 50%;
+    display: block;
+    
+  }
+  .speakers-sliderboard  .carousel-inner {
+    display: flex;
+  }
+  
+}
+@media (min-width: 768px) {
+  .speakers-sliderboard  .carousel-inner {
+    padding: 1em;
+  }
+  
+  .speakers-sliderboard  .carousel-control-prev,
+  .speakers-sliderboard  .carousel-control-next {
+    opacity: 1;
+    position: absolute;
+    color: #000000;
+    left: 1em;
+    top: 90%;
+    transform: translateY(-50%);
+  }
+  .speakers-sliderboard  .carousel-control-next {
+    left: 5em;
+  }
+  
+}
+
+
+ 
+
+/* the board */
 
 
