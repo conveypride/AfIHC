@@ -3972,7 +3972,7 @@ ol {
 
 .call-action.overlay::before {
     background: linear-gradient(45deg, #3813c2, #E63523);
-    opacity: 0.9;
+    opacity: 0.5;
 }
 
 .call-action .inner-content {
